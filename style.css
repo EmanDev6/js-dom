@@ -1,0 +1,99 @@
+/* Reset basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 420px;
+  padding: 20px;
+}
+
+/* Form box */
+.box {
+  background-color: #52a6d7;
+  
+  padding: 30px;
+  border-radius: 16px;
+
+  box-shadow: rgba(21, 17, 222, 0.795) 0px 22px 70px 4px;
+  transition: transform 0.2s ease;
+}
+
+.box:hover {
+  transform: scale(1.02);
+}
+
+/* Heading */
+.heading {
+  text-align: center;
+  font-size: 24px;
+  color: #2c3e50;
+  margin-bottom: 25px;
+}
+
+/* Labels */
+label {
+  font-weight: 600;
+  margin-top: 16px;
+  display: block;
+  color: #34495e;
+}
+
+/* Inputs */
+input[type="number"] {
+  width: 100%;
+  padding: 10px 14px;
+  margin-top: 6px;
+  border: 1px solid #580ca4;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="number"]:focus {
+  border-color: #5dade2;
+  outline: none;
+  box-shadow: 0 0 6px #85c1e9;
+}
+
+/* Button */
+button {
+  margin-top: 25px;
+  width: 100%;
+  padding: 12px;
+  background-color: #2fdfb0;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #2980b9;
+  transform: translateY(-1px);
+}
+
+/* Result */
+.result-text {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #370464;
+}
